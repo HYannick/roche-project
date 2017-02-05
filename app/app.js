@@ -20,7 +20,6 @@ webrtc.on('readyToCall', function () {
   // you can name it anything
   if (room) {
     webrtc.joinRoom(room);
-    console.log('eheh');
 
     //For Text Chat ------------------------------------------------------------------
     // Await messages from others
