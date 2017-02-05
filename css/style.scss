@@ -1,0 +1,110 @@
+$color-1 : #7A5B3E;
+$color-2 : #FAFAFA;
+$color-3 : #FA4B00;
+$color-4 : #CDBDAE;
+$color-5 : #1F1F1F;
+
+body{
+  background: $color-2;
+}
+.room-setup{
+  max-width: 350px;
+  width: 100%;
+}
+form{
+  #room-name{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+  }
+  .input-style{
+    position: relative;
+    margin-top: 30px;
+  }
+  .label-name{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    cursor: text;
+    &.hovered{
+      top: -35%;
+      left: 0;
+    }
+  }
+}
+.localVideoContainer{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  z-index: 99;
+  video{
+    width: 100%;
+    border-radius: 50px;
+  }
+}
+#title{
+  color: $color-3;
+}
+#subTitle{
+  color: #fff;
+}
+#messages{
+  color: #ffffff;
+}
+.room-infos {
+  padding: 20px;
+}
+.info{
+  background: $color-5;
+  height: 100vh;
+  padding: 0;
+  p{
+    color: #fff;
+    font-size: 20px;
+  }
+}
+.video-box{
+  height: 100vh;
+}
+#remotes{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #333;
+  }
+}
+.buttons{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999
+}
+
+
+.room-setup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
